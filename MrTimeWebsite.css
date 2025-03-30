@@ -1,0 +1,180 @@
+h1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: black; 
+    white-space: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: black; 
+    white-space: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: black; 
+  white-space: 10px;
+}
+
+h5 {
+    text-align: left;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: black; 
+    white-space: 10px;
+}
+
+h6 {
+  text-align: left;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  color: black; 
+  white-space: 10px;
+}
+
+p {
+    text-align: left;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: black; 
+    white-space: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 20px; /* Add spacing between cards */
+}
+
+.card-body {
+  flex-grow: 1; /* Make the body stretch to fill available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px; /* Ensure consistent height for the card body */
+}
+
+.card-footer {
+  background-color: #f8f9fa; /* Optional: Add a background color to the footer */
+  border-top: 1px solid #ddd; /* Optional: Add a border to separate the footer */
+  text-align: center; /* Center the button in the footer */
+}
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  line-clamp: 3; /* Standard property for compatibility */
+  -webkit-box-orient: vertical;
+  height: 4.5em; /* Adjust height to match the line clamp */
+}
+
+.card-img-top {
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure the image fits within the container */
+  width: 100%; /* Ensure the image spans the full width of the card */
+}
+
+.lighter-image {
+  filter: brightness(0); /* Adjust the value as needed */
+  filter: opacity(0.65); /* Adjust the value as needed */
+}
+
+.navbar {
+text-align: center; /* Center the text */
+padding: 0%; /* Padding inside the navbar */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Small shadow for depth */
+width: 100%;}
+
+.navbar-nav {
+text-align: left;
+font-size: 1.5em;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav-link {
+  color: black /* Change text color */
+}
+
+.btn-outline-success {
+  color: black;
+  border-color: black;
+}
+
+.btn.btn-danger.mb-3 {
+  color: black; /* Change the text color */
+  border-color: #cc0000; /* Change the border color */
+  font-weight: bold; /* Make the text bold */
+}
+
+.footer { 
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px 0; /* Add vertical padding */
+    text-align: center; /* Center-align text for smaller screens */
+    border-top: 1px solid #ddd; /* Optional: Add a border at the top */
+}
+
+.footer h5 {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.footer p, .footer h6 {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.footer a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.btn-primary {
+  background-color: whitesmoke;
+  border-color: black;
+  color: black;
+}
+
+.btn-secondary {
+  background-color:whitesmoke;
+  border-color: black;
+  color: black;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

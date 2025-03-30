@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mr Time Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="MrTimeWebsite.css">
+    <style> 
+      /* Ensure the card image fills the card */
+.card {
+    position: relative;
+    overflow: hidden; /* Ensures the text doesn't overflow the card */
+    border: none; /* Optional: Remove the border if not needed */
+}
+
+.card-img-top {
+    width: 100%; /* Make the image fill the card's width */
+    height: 100%; /* Make the image fill the card's height */
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+/* Hide the card text initially */
+.card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: white; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Show the card text on hover */
+.card:hover .card-body {
+    opacity: 1; /* Fully visible on hover */
+}
+    </style>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <br> 
+    <h1>MK TIME WATCHES</h1>
+    <br> 
+    <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar" style="background-color: whitesmoke">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our collections
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="MrTimeWebsiteProductPage.html">Men</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="MrTimeWebsiteUnderConstruction.html">Women</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="MrTimeWebsiteUnderConstruction.html">Children</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="MrTimeWebsiteUnderConstruction.html">Sales</a></li>
+                </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Get in touch
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="MrTimeWebsiteUnderConstruction.html">Email us directly</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="MrTimeWebsiteUnderConstruction.html">Physical shops that sell our products</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="MrTimeWebsiteRefund.html">Refund</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="MrTimeWebsiteRegister.php">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="MrTimeWebsiteForm.php">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        </nav>
+      </nav>
+      <br>
+      <br>
+      <h2>Specials of the month</h2>
+      <br>
+    <div class="container my-5">
+      <div class="row gy-4 gx-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/watch1.jpeg" alt="UNO" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center">UNO</h5>
+              <p class="card-text">A classical watch from £99.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/watch2.jpeg" alt="DUE" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center">DUE</h5>
+              <p class="card-text">A fancy watch from £99.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/watch3.jpeg" alt="TRE" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center">TRE</h5>
+              <p class="card-text">A modern watch from £99.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-4">
+                <h5>Contact details</h5>
+                <br>
+                <h6> 234 Street Name, City Name, Earth
+                <br>
+                 +123 456 7890
+                <br>
+                 mrtimeswatches@clock.com </h6>
+    </div>
+    <div class="col-md-4">
+        <h5>Opening hours</h5>
+        <br>
+        <h6> Monday - Friday: 9am - 5pm
+        <br>
+         Saturday: 10am - 4pm
+        <br>
+         Sunday: Closed </h6>
+    </div>
+    <div class="col-md-4">
+        <h5>Follow us</h5>
+        <br>
+        <h6> <a href="#">Facebook</a>
+        <br>
+         <a href="#">Instagram</a>
+        <br>
+         <a href="#">Twitter</a> </h6>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  </body>
+</html>
