@@ -29,7 +29,7 @@ describe('Registration Page Tests', () => {
     // Submit the form
     cy.get('#registerButton').click();
 
-    // Check for the error alert (customize this based on your actual error message)
+    // Check for the error alert
     cy.on('window:alert', (text) => {
       expect(text).to.contains('Error:'); // Adjust the message as needed
     });
